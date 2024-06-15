@@ -13,10 +13,10 @@ hero:
   actions:
     - theme: brand
       text: 经典控制理论
-      link: '/docs/classical/00.概念/index'
+      link: '/docs/classical/00.概述/index'
     - theme: alt
       text: 现代控制理论
-      link: '/docs/modern/00.Introduction/index'
+      link: '/docs/modern/00.概述/index'
 
 features:
   - title: 经典控制理论
