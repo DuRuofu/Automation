@@ -31,7 +31,7 @@ export default defineConfig({
         ]
       }],
       '/docs/modern/': [{
-          text: '现代控制理论',link: '/00.概述/index'
+          text: '现代控制理论',link: '/docs/modern/00.概述/index'
       }]
     },
 
