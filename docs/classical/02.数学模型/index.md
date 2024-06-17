@@ -5,7 +5,9 @@
 ## 一、控制系统数学模型的分类(动态)
 
 时域：微分方程、差分方程、状态空间表达式
+
 复域：传递函数、动态结构图、信号流图
+
 频域：频率特性
 
 > 表达形式如下图：
@@ -31,32 +33,33 @@
 
 >电阻、电容、电感数学模型的微分表达：
 
-| ![](attachments/Pasted%20image%2020240616162626.png) | $$u(t)=i(t)·R$$                           | $$i(t)=\frac{u(t)}{R}$$                          |
+| ![](attachments/Pasted%20image%2020240616162626.png) | $u(t)=i(t)·R$                           | $i(t)=\frac{u(t)}{R}$                          |
 | ---------------------------------------------------- | ----------------------------------------- | ------------------------------------------------ |
-| ![](attachments/Pasted%20image%2020240616162633.png) | $$u(t)=\frac{1}{C}\int{i(t)}\mathrm{d}t$$ | $$i(t)=C\frac{\mathrm{d}{u(t)}}{\mathrm{d}{t}}$$ |
-| ![](attachments/Pasted%20image%2020240616162640.png) | $$u(t)=\frac{1}{L}\int{u(t)}\mathrm{d}t$$ | $$u(t)=L\frac{\mathrm{d}{i(t)}}{\mathrm{d}{t}}$$ |
+| ![](attachments/Pasted%20image%2020240616162633.png) | $u(t)=\frac{1}{C}\int{i(t)}\mathrm{d}t$ | $i(t)=C\frac{\mathrm{d}{u(t)}}{\mathrm{d}{t}}$ |
+| ![](attachments/Pasted%20image%2020240616162640.png) | $u(t)=\frac{1}{L}\int{u(t)}\mathrm{d}t$ | $u(t)=L\frac{\mathrm{d}{i(t)}}{\mathrm{d}{t}}$ |
 则由基尔霍夫定律有
 
 $$
 U_r(t)=Ri(t)+L\frac{\mathrm{d}i(t)}{\mathrm{d}t}+u_c(t)
 $$
 对
-$$ U_c(t)=\frac{1}{C}\int{i(t)}\mathrm{d}t $$进行两边求导有：
+$$ U_c(t)=\frac{1}{C}\int{i(t)}\mathrm{d}t $$
+
+进行两边求导有：
 
 $$
 i(t)=C\frac{\mathrm{d}u_c(t)}{\mathrm{d}t}
 $$
 
 联立消除中间变量得到方程：
+
 $$
 LC\frac{\mathrm{d^2}u_c(t)}{\mathrm{d}t^2}+RC\frac{\mathrm{d}u_c(t)}{\mathrm{d}t}+u_c(t)=U_r(t)
 $$
 
+
+
 ## 三、拉氏变换求解微分方程
-
-
-
-
 
 ## 传递函数的概念、定义和性质。
 ## 控制系统的结构图，结构图的等效变换。
