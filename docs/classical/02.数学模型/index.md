@@ -42,7 +42,7 @@
 $$
 U_r(t)=Ri(t)+L\frac{\mathrm{d}i(t)}{\mathrm{d}t}+u_c(t)
 $$
-对  $$ U_c(t)=\frac{1}{C}\int{i(t)}\mathrm{d}t $$  进行两边求导有：
+对  $ U_c(t)=\frac{1}{C}\int{i(t)}\mathrm{d}t $  进行两边求导有：
 $$
 i(t)=C\frac{\mathrm{d}u_c(t)}{\mathrm{d}t}
 $$
