@@ -92,13 +92,16 @@ const customElements = [
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
+	lang: 'zh-CN',
   title: "Automation Notes",
   base: "/Automation/",
   description: "Notes on Learning the Principles of Automatic Control",
-  head: [['link',{rel:'icon',href:'/Automation/logo.ico'}]], 
+	head: [['link', { rel: 'icon', href: '/Automation/logo.ico' }]], 
+	lastUpdated: true,
   themeConfig: {
     logo: "/logo.png",
-    //https://vitepress.dev/reference/default-theme-config
+		//https://vitepress.dev/reference/default-theme-config
+
     nav: [
       { text: '概览', link: '/' },
       { text: '经典控制', link: '/docs/classical/00.概述/index'},
@@ -123,6 +126,16 @@ export default defineConfig({
       '/docs/modern/': [{
           text: '现代控制理论',link: '/docs/modern/00.概述/index'
       }]
+		},
+		editLink: {
+      pattern: ({ filePath }) => {
+        if (filePath.startsWith('packages/')) {
+          return `https://github.com/DuRuofu/Automation/edit/main/${filePath}`
+        } else {
+          return `https://github.com/DuRuofu/Automation/edit/main/${filePath}`
+        }
+			},
+			text: '在 GitHub 上编辑此页'
     },
 
     socialLinks: [
@@ -135,8 +148,17 @@ export default defineConfig({
 
     search: {
       provider: 'local'
-    }
+		},
+		// 文章翻页
+		docFooter: {
+      prev: '上一篇',
+      next: '下一篇'
+		},
 
+		darkModeSwitchLabel: '外观切换',
+		outlineTitle: '页面大纲',
+		lastUpdatedText: '最后更新于',
+		returnToTopLabel: '返回顶部',
   },
   	markdown: {
 		config: (md) => {
