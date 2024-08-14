@@ -105,7 +105,8 @@ export default defineConfig({
     nav: [
       { text: '概览', link: '/' },
       { text: '经典控制', link: '/docs/classical/00.概述/index'},
-      { text: '现代控制', link: '/docs/modern/00.概述/index' },
+			{ text: '现代控制', link: '/docs/modern/00.概述/index' },
+			{ text: '其他', link: '/docs/other/01.信号与系统初步/信号与系统初步' },
     ],
 
     sidebar: {
@@ -125,6 +126,9 @@ export default defineConfig({
       }],
       '/docs/modern/': [{
           text: '现代控制理论',link: '/docs/modern/00.概述/index'
+			}],
+			'/docs/other/': [{
+          text: '信号与系统初步',link: '/docs/other/01.信号与系统初步/信号与系统初步'
       }]
 		},
 		editLink: {
